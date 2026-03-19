@@ -5,7 +5,7 @@ Un proiect de sistem de securitate integrat care utilizează o placă Arduino pe
 ## Caracteristici Tehnice
   **Arhitectură de Control:** Implementare bazată pe Mașină cu Stări Finite (FSM) cu 4 stări distincte: "LOCKED", "ENTERING", "UNLOCKED" și "ALARM".
   **Securitate:** Sistemul permite maximum 3 încercări greșite înainte de a declanșa o alarmă sonoră de 10 secunde.
-  **Multitasking Non-blocking:** Utilizarea funcției "millis()" pentru gestionarea intervalelor de timp (durata de deblocare și ritmul alarmei), permițând procesorului să rămână receptiv fără a fi blocat de funcții `delay()`[cite: 44].
+  **Multitasking Non-blocking:** Utilizarea funcției "millis()" pentru gestionarea intervalelor de timp (durata de deblocare și ritmul alarmei), permițând procesorului să rămână receptiv fără a fi blocat de funcții "delay()".
   **Feedback Audio-Vizual:** Utilizarea unui buzzer pentru confirmarea tastării și a unui servomotor pentru acționarea fizică a încuietorii.
 
 ## Componente Utilizate
