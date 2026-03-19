@@ -6,12 +6,12 @@ Un proiect de sistem de securitate integrat care utilizează o placă Arduino pe
 * **Arhitectură de Control:** Implementare bazată pe Mașină cu Stări Finite (FSM) cu 4 stări distincte: "LOCKED", "ENTERING", "UNLOCKED" și "ALARM".
 * **Securitate:** Sistemul permite maximum 3 încercări greșite înainte de a declanșa o alarmă sonoră de 10 secunde.
 * **Multitasking Non-blocking:** Utilizarea funcției "millis()" pentru gestionarea intervalelor de timp (durata de deblocare și ritmul alarmei), permițând procesorului să rămână receptiv fără a fi blocat de funcții "delay()".
-  **Feedback Audio-Vizual:** Utilizarea unui buzzer pentru confirmarea tastării și a unui servomotor pentru acționarea fizică a încuietorii.
+* **Feedback Audio-Vizual:** Utilizarea unui buzzer pentru confirmarea tastării și a unui servomotor pentru acționarea fizică a încuietorii.
 
 ## Componente Utilizate
-  **Microcontroler:** Placă compatibilă Arduino.
-  **Actuatoare:** Servomotor (pentru controlul încuietorii) și Buzzer (pentru feedback sonor).
-  **Input:** 5 butoane (4 pentru cifrele PIN-ului și 1 pentru activare/confirmare).
+* **Microcontroler:** Placă compatibilă Arduino.
+* **Actuatoare:** Servomotor (pentru controlul încuietorii) și Buzzer (pentru feedback sonor).
+* **Input:** 5 butoane (4 pentru cifrele PIN-ului și 1 pentru activare/confirmare).
 
 ## Logica Sistemului (Stări)
 1. **LOCKED (Blocat):** Servomotorul este la 0 grade. Sistemul așteaptă apăsarea oricărui buton pentru a începe introducerea codului.
